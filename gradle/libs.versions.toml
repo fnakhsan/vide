@@ -106,10 +106,12 @@ navigation = ["androidx-navigation-ui-ktx", "androidx-navigation-fragment-ktx"]
 [plugins]
 #   Android
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-secrets-gradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version = "2.0.1"}
 #   Kotlin
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-android-version" }
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlin-ksp-version" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-android-version" }
 google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "google-gms-google-services" }
 google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "google-firebase-crashlytics" }
+
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".anime.presentation.HomeAnimeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_fav_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_fav_anime"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fav_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem=""/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_recent_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_recent_anime"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recent_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem=""/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_top_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_top_anime"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_top_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:listitem=""/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_new_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_new_anime"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_new_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="false"
+            tools:listitem=""/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

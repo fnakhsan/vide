@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Vide</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Discover more stories here!</string>
+    <string name="search_placeholder">Type..</string>
+
+    <string name="tv_fav_anime">Your Favorites</string>
+    <string name="tv_recent_anime">Recently Watched</string>
+    <string name="tv_top_anime">Top Airing</string>
+    <string name="tv_new_anime">New Episodes</string>
 </resources>

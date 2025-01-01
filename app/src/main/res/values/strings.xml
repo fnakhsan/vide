@@ -8,4 +8,20 @@
     <string name="tv_recent_anime">Recently Watched</string>
     <string name="tv_top_anime">Top Airing</string>
     <string name="tv_new_anime">New Episodes</string>
+
+    <string name="tv_title">Title</string>
+    <string name="tv_status">Status</string>
+    <string name="tv_genre">Genre</string>
+
+    <string name="chip_dub_anime">DUB</string>
+
+    <string name="label_fav_anime_eps">Watched Eps :</string>
+    <string name="tv_fav_anime_eps">%1$d / %2$d</string>
+    <string name="tv_fav_anime_rating">5</string>
+
+    <string name="tv_recent_anime_playlist">12</string>
+    <string name="tv_recent_anime_eps">Eps: %1$d</string>
+    <string name="tv_recent_anime_prog">%1$d / %2$d</string>
+
+
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="label_large" parent="TextAppearance.Material3.LabelLarge" />
+    <style name="tiny_rounded">
+        <item name="cornerSize">5%</item>
+    </style>
+    <style name="small_rounded">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="medium_rounded">
+        <item name="cornerSize">20%</item>
+    </style>
+    <style name="large_rounded">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

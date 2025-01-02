@@ -13,16 +13,16 @@
         android:layout_marginBottom="4dp">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/iv_fav_anime"
+            android:id="@+id/iv_recent_anime"
             android:layout_width="180dp"
             android:layout_height="120dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            app:shapeAppearanceOverlay="@style/small_rounded"
+            app:shapeAppearanceOverlay="@style/tiny_rounded"
             tools:src="@drawable/dummy_thumb_anime" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_fav_anime_dub"
+            android:id="@+id/chip_recent_anime_dub"
             style="@style/Widget.Material3.Chip.Suggestion.Elevated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,8 +47,20 @@
             tools:text="@string/chip_dub_anime"
             tools:visibility="visible" />
 
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            style="@style/Widget.Material3.LinearProgressIndicator"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="4dp"
+            app:indicatorTrackGapSize="@null"
+            app:trackStopIndicatorSize="@null"
+            app:trackThickness="3dp"
+            tools:progress="70" />
+
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_fav_anime_rating"
+            android:id="@+id/chip_recent_anime_playlist"
             style="@style/Widget.Material3.Chip.Input.Elevated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,19 +79,18 @@
             app:chipMinTouchTargetSize="0dp"
             app:chipStartPadding="3dp"
             app:chipSurfaceColor="#CC333333"
-            app:closeIcon="@drawable/ic_kid_star_24"
+            app:closeIcon="@drawable/ic_playlist_play_24"
             app:closeIconEndPadding="3dp"
             app:closeIconSize="14dp"
             app:closeIconStartPadding="3dp"
             app:closeIconTint="@color/white"
             app:textEndPadding="6dp"
             app:textStartPadding="6dp"
-            tools:text="@string/tv_fav_anime_rating" />
-
+            tools:text="@string/tv_recent_anime_playlist" />
     </FrameLayout>
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/tv_fav_anime_title"
+        android:id="@+id/tv_recent_anime_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -98,19 +109,19 @@
         android:orientation="horizontal">
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/label_fav_anime_eps"
+            android:id="@+id/tv_recent_anime_eps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11sp"
-            tools:text="@string/label_fav_anime_eps" />
+            tools:text="@string/tv_recent_anime_eps" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tv_fav_anime_eps"
+            android:id="@+id/tv_recent_anime_prog"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="end"
             android:textSize="11sp"
-            tools:text="@string/tv_fav_anime_eps" />
+            tools:text="@string/tv_recent_anime_prog" />
     </LinearLayout>
 </LinearLayout>

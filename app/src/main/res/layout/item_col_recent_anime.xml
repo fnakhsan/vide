@@ -47,18 +47,6 @@
             tools:text="@string/chip_dub_anime"
             tools:visibility="visible" />
 
-        <com.google.android.material.progressindicator.LinearProgressIndicator
-            style="@style/Widget.Material3.LinearProgressIndicator"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="4dp"
-            app:indicatorTrackGapSize="@null"
-            app:trackStopIndicatorSize="@null"
-            app:trackThickness="3dp"
-            tools:progress="70" />
-
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_recent_anime_playlist"
             style="@style/Widget.Material3.Chip.Input.Elevated"
@@ -87,6 +75,18 @@
             app:textEndPadding="6dp"
             app:textStartPadding="6dp"
             tools:text="@string/tv_recent_anime_playlist" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            style="@style/Widget.Material3.LinearProgressIndicator"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="4dp"
+            app:indicatorTrackGapSize="@null"
+            app:trackStopIndicatorSize="@null"
+            app:trackThickness="3dp"
+            tools:progress="70" />
     </FrameLayout>
 
     <com.google.android.material.textview.MaterialTextView

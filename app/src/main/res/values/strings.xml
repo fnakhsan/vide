@@ -23,5 +23,7 @@
     <string name="tv_recent_anime_eps">Eps: %1$d</string>
     <string name="tv_recent_anime_prog">%1$d / %2$d</string>
 
+    <string name="tv_top_anime_rank">10</string>
+    <string name="tv_top_anime_playlist">1122</string>
 
 </resources>

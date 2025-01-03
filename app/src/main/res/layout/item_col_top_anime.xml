@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_top_anime"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/tiny_rounded"
+            tools:src="@drawable/dummy_thumb_anime" />
+
+        <TextView
+            android:id="@+id/tv_top_anime_rank"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="#CC000000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="@string/tv_top_anime_rank" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_top_anime_playlist"
+            style="@style/Widget.Material3.Chip.Input.Elevated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:clickable="false"
+            android:elevation="4dp"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipCornerRadius="6dp"
+            app:chipEndPadding="3dp"
+            app:chipMinHeight="24dp"
+            app:chipMinTouchTargetSize="0dp"
+            app:chipStartPadding="3dp"
+            app:chipSurfaceColor="#CC333333"
+            app:closeIcon="@drawable/ic_playlist_play_24"
+            app:closeIconEndPadding="3dp"
+            app:closeIconSize="14dp"
+            app:closeIconStartPadding="3dp"
+            app:closeIconTint="@color/white"
+            app:textEndPadding="6dp"
+            app:textStartPadding="6dp"
+            tools:text="@string/tv_top_anime_playlist" />
+    </FrameLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_top_anime_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="middle"
+        android:gravity="start"
+        android:maxLines="2"
+        android:paddingHorizontal="4dp"
+        android:textSize="14sp"
+        tools:text="@string/tv_title" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_top_anime_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.chip.ChipGroup>
+</LinearLayout>

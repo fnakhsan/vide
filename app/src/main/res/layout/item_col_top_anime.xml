@@ -25,9 +25,10 @@
             android:id="@+id/tv_top_anime_rank"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:background="#CC000000"
+            android:background="@drawable/bg_top_anime_rank"
             android:gravity="center"
             android:textColor="@color/white"
+            android:textSize="12sp"
             android:textStyle="bold"
             tools:text="@string/tv_top_anime_rank" />
 
@@ -71,11 +72,14 @@
         android:textSize="14sp"
         tools:text="@string/tv_title" />
 
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/cg_top_anime_genre"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
-
-    </com.google.android.material.chip.ChipGroup>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cg_top_anime_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </HorizontalScrollView>
 </LinearLayout>

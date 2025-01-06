@@ -26,4 +26,6 @@
     <string name="tv_top_anime_rank">10</string>
     <string name="tv_top_anime_playlist">1122</string>
 
+    <string name="label_new_anime_eps">Episode :</string>
+    <string name="tv_new_anime_eps">1123</string>
 </resources>

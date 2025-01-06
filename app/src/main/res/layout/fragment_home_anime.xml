@@ -70,7 +70,9 @@
             android:layout_height="wrap_content"
             android:nestedScrollingEnabled="false"
             android:orientation="vertical"
-            tools:listitem="" />
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/item_row_new_anime" />
 
     </LinearLayout>
 
